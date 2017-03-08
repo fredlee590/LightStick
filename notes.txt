@@ -1,0 +1,27 @@
+2/21/2017
+
+looked into USB charger problem. confirmed it was a charger thing being too smart. seems this is a thing. looking up Anker PowerIQ shows that the voltage on the data line defines whether or not a the battery keeps charging for some models. 
+https://learn.adafruit.com/minty-boost/icharging
+also, experiments show the teensy continues to draw power indefinitely (or near enough).
+https://www.pjrc.com/teensy/schematic.html
+
+check this out:
+https://www.maximintegrated.com/en/app-notes/index.mvp/id/4803
+
+maybe we just need pull up or pull down resistors
+
+got a plan to experimentally figure this issue out for this particular ANKER charger:
+
+solder together a quick USB breakout board[1] with all four lines exposed. wire up 2 voltage dividers with D+ and D- in the middles. 1k resistors on GND side and 10k (or whatever) potentiometers on the 5V side. turn dials until power is stable.
+
+measure current of 5V line between this circuit and the trinket load. measure duration of power. success is longer than 30 seconds of power. confirmation is overnight.
+
+record final voltage values at D+ and D-.
+
+[1] no need to go full OSHPark on this
+
+3/7/2017
+
+Brought up the power problem at lunch. The suggestion came up that the circuit may not be drawing enough power. Sure enough, attaching 22 more LEDs made the battery last a lot longer. Dareisay, indefinitely. Plan to keep a plow pulse as the default state.
+
+Anyway, now can proceed with PCB build out. The final PCB(s) should draw much more power than in the 23 LED case.
