@@ -702,6 +702,104 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Capacitors">
+<description>&lt;h3&gt;SparkFun Capacitors&lt;/h3&gt;
+This library contains capacitors. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="0603">
+<description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+<package name="1206">
+<description>&lt;p&gt;&lt;b&gt;Generic 3216 (1206) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-2.4" y1="1.1" x2="2.4" y2="1.1" width="0.0508" layer="39"/>
+<wire x1="2.4" y1="-1.1" x2="-2.4" y2="-1.1" width="0.0508" layer="39"/>
+<wire x1="-2.4" y1="-1.1" x2="-2.4" y2="1.1" width="0.0508" layer="39"/>
+<wire x1="2.4" y1="1.1" x2="2.4" y2="-1.1" width="0.0508" layer="39"/>
+<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
+<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
+<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
+<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CAP">
+<wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="0.508" width="0.1524" layer="94"/>
+<text x="1.524" y="2.921" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="1.524" y="-2.159" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<rectangle x1="-2.032" y1="0.508" x2="2.032" y2="1.016" layer="94"/>
+<rectangle x1="-2.032" y1="1.524" x2="2.032" y2="2.032" layer="94"/>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="4.7UF" prefix="C">
+<description>&lt;h3&gt;4.7µF ceramic capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="0603" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08280"/>
+<attribute name="VALUE" value="4.7uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-1206-16V-(+80/-20%)" package="1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-10300" constant="no"/>
+<attribute name="VALUE" value="4.7uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -715,16 +813,21 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <part name="V1" library="freddyLibr" deviceset="VOLTAGE_REGULATOR_AP2114H" device=""/>
 <part name="USB1" library="freddyLibr" deviceset="USB_A_932" device=""/>
 <part name="MCU1" library="trinketLib" deviceset="ARDUINO_TRINKET" device=""/>
-<part name="LED_VCC" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
-<part name="LED_GND" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
+<part name="LED_VCC1" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
+<part name="LED_GND1" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
 <part name="SNS_VCC" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
 <part name="SNS_GND" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
-<part name="LED_DATA" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
+<part name="LED_DATA1" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
 <part name="SNS_CLK" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
 <part name="SNS_DATA" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
 <part name="BTN_IN" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
 <part name="BTN_VCC" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
 <part name="BTN_GND" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
+<part name="C1" library="SparkFun-Capacitors" deviceset="4.7UF" device="0603" value="4.7uF"/>
+<part name="C2" library="SparkFun-Capacitors" deviceset="4.7UF" device="0603" value="4.7uF"/>
+<part name="LED_DATA2" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
+<part name="LED_VCC2" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
+<part name="LED_GND2" library="SparkFun-Connectors" deviceset="CONN_01" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -734,11 +837,11 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <instance part="V1" gate="G$1" x="53.34" y="30.48" rot="R180"/>
 <instance part="USB1" gate="G$1" x="68.58" y="53.34" rot="R270"/>
 <instance part="MCU1" gate="G$1" x="27.94" y="38.1"/>
-<instance part="LED_VCC" gate="G$1" x="71.12" y="17.78" smashed="yes" rot="R180">
+<instance part="LED_VCC1" gate="G$1" x="71.12" y="17.78" smashed="yes" rot="R180">
 <attribute name="VALUE" x="73.66" y="22.606" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="73.66" y="14.732" size="1.27" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="LED_GND" gate="G$1" x="86.36" y="27.94" smashed="yes" rot="R180">
+<instance part="LED_GND1" gate="G$1" x="86.36" y="27.94" smashed="yes" rot="R180">
 <attribute name="VALUE" x="88.9" y="32.766" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="88.9" y="24.892" size="1.27" layer="95" font="vector" rot="R180"/>
 </instance>
@@ -750,7 +853,7 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <attribute name="VALUE" x="27.94" y="12.446" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="27.94" y="4.572" size="1.27" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="LED_DATA" gate="G$1" x="-5.08" y="35.56" smashed="yes">
+<instance part="LED_DATA1" gate="G$1" x="-5.08" y="35.56" smashed="yes">
 <attribute name="VALUE" x="-7.62" y="30.734" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="-7.62" y="38.608" size="1.27" layer="95" font="vector"/>
 </instance>
@@ -774,6 +877,20 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <attribute name="VALUE" x="27.94" y="-2.794" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="27.94" y="-10.668" size="1.27" layer="95" font="vector" rot="R180"/>
 </instance>
+<instance part="C1" gate="G$1" x="43.18" y="50.8"/>
+<instance part="C2" gate="G$1" x="60.96" y="25.4" rot="R180"/>
+<instance part="LED_DATA2" gate="G$1" x="-12.7" y="48.26" smashed="yes">
+<attribute name="VALUE" x="-15.24" y="43.434" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="-15.24" y="51.308" size="1.27" layer="95" font="vector"/>
+</instance>
+<instance part="LED_VCC2" gate="G$1" x="73.66" y="5.08" smashed="yes" rot="R180">
+<attribute name="VALUE" x="76.2" y="9.906" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="76.2" y="2.032" size="1.27" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="LED_GND2" gate="G$1" x="88.9" y="38.1" smashed="yes" rot="R180">
+<attribute name="VALUE" x="91.44" y="42.926" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="91.44" y="35.052" size="1.27" layer="95" font="vector" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -791,10 +908,17 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <wire x1="55.88" y1="50.8" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="USB1" gate="G$1" pin="D-"/>
 <wire x1="55.88" y1="55.88" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="48.26" x2="43.18" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED_GND" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="27.94" x2="71.12" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="LED_GND1" gate="G$1" pin="1"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="27.94" x2="71.12" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="LED_GND2" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="27.94" x2="78.74" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="38.1" x2="71.12" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="38.1" x2="71.12" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MCU1" gate="G$1" pin="GND"/>
@@ -819,25 +943,38 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <wire x1="76.2" y1="43.18" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="V1" gate="G$1" pin="VIN"/>
 <wire x1="55.88" y1="43.18" x2="55.88" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="58.42" x2="10.16" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="58.42" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="58.42" x2="10.16" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="58.42" x2="10.16" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="45.72" x2="17.78" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="MCU1" gate="G$1" pin="BATT"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="43.18" y1="55.88" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED_VCC" class="0">
 <segment>
 <pinref part="V1" gate="G$1" pin="VOUT2"/>
 <wire x1="53.34" y1="20.32" x2="53.34" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="17.78" x2="63.5" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="LED_VCC" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="17.78" x2="60.96" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="LED_VCC1" gate="G$1" pin="1"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="60.96" y1="17.78" x2="63.5" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="20.32" x2="60.96" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="17.78" x2="60.96" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="LED_VCC2" gate="G$1" pin="1"/>
+<wire x1="60.96" y1="5.08" x2="66.04" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED_DATA" class="0">
 <segment>
-<pinref part="LED_DATA" gate="G$1" pin="1"/>
+<pinref part="LED_DATA1" gate="G$1" pin="1"/>
 <pinref part="MCU1" gate="G$1" pin="PB4"/>
-<wire x1="2.54" y1="35.56" x2="17.78" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="35.56" x2="5.08" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="LED_DATA2" gate="G$1" pin="1"/>
+<wire x1="5.08" y1="35.56" x2="17.78" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="48.26" x2="5.08" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="48.26" x2="5.08" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SNS_VCC" class="0">
