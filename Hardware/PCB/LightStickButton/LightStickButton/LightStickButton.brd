@@ -153,11 +153,11 @@
 <wire x1="6.16" y1="6.16" x2="6.16" y2="-6.16" width="0.127" layer="21"/>
 <wire x1="6.16" y1="-6.16" x2="-6.16" y2="-6.16" width="0.127" layer="21"/>
 <wire x1="-6.16" y1="-6.16" x2="-6.16" y2="6.16" width="0.127" layer="21"/>
-<pad name="4" x="3.77" y="3.77" drill="1.1" diameter="1.27"/>
-<pad name="3" x="1.31" y="1.31" drill="1.1" diameter="1.27"/>
-<hole x="3.77" y="-1.31" drill="1"/>
-<hole x="-3.85" y="3.77" drill="1"/>
-<pad name="1" x="-3.77" y="-3.77" drill="1.1" diameter="1.27"/>
+<pad name="4" x="3.77" y="3.77" drill="1.2" diameter="1.27"/>
+<pad name="3" x="1.31" y="1.31" drill="1.2" diameter="1.27"/>
+<hole x="-1.31" y="3.77" drill="1"/>
+<hole x="3.77" y="-3.85" drill="1"/>
+<pad name="1" x="-3.77" y="-3.77" drill="1.2" diameter="1.27"/>
 <text x="0" y="6.35" size="1.27" layer="21">&gt;NAME</text>
 </package>
 </packages>
