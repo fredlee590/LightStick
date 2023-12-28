@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "LightStickControl")(type "KiCad")(uri "$(KIPRJMOD)/LightStickControl.pretty")(options "")(descr ""))
+)
